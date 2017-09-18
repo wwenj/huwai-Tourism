@@ -1,0 +1,682 @@
+/*浏览器初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px;  font-family:"微软雅黑";}
+td,th,caption { font-size:14px; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:none; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+
+.box{
+	width: 100%;
+	height: 2000px;
+	background: rgba(0,0,0,0.1);
+}
+.header{
+	width: 100%;
+	height: 800px;
+	border: 1px solid rgba(0,0,0,0);
+	margin-top: -25px;
+	background:url("../img/bg.jpg") no-repeat center top;
+}
+.show{
+	width:1092px;
+	height:430px;
+	margin:140px auto;
+}
+.pic{
+	width:100px;
+	height:429px;
+	float:left;
+}
+.txt{
+	width:72px;
+	height:405px;
+	background:rgba(0,0,0,.5);
+	color:#fff;
+	cursor:pointer;
+	font-family:"微软雅黑";
+	padding:24px 0 0 30px;
+}
+.p1{
+	width:12px;
+	font-size:12px;
+	float:left;
+}
+.p2{width:14px;
+	font-size:14px;
+	font-weight:bold;
+	float:left;
+	margin-left:15px;
+}
+.button_box{
+	/*width: 1087px;*/
+	width: 1092px;
+	margin:0 auto;
+	height: 100px;
+	margin-top: -60px;
+	
+}
+.button{
+	width: 200px;
+	height: 55px;
+	float: left;
+	cursor: pointer;
+	font-size: 22px;
+	line-height: 55px;
+	text-align:center;
+	background: rgba(0,0,0,0.2);
+	border: 1px solid rgba(255,255,255,0.3);
+	-moz-transition:ease 0.5s;
+    -o-transition:ease 0.5s;
+    -webkit-transition:ease 0.5s;
+    transition:ease 0.5s;
+}
+.button:hover{	
+	background: rgba(0,0,0,0.7);
+	border: 1px solid rgba(255,255,255,0.8);
+}
+.button a{
+	color: rgba(255,255,255,0.5);
+	-moz-transition:ease 0.5s;
+    -o-transition:ease 0.5s;
+    -webkit-transition:ease 0.5s;
+    transition:ease 0.5s;
+}
+.button:hover a{
+	color: rgba(255,255,255,0.8);
+}
+.button .line{
+	background:none;
+	display: block;
+	position:absolute;
+    -moz-transition:ease 0.4s;
+    -o-transition:ease 0.4s;
+    -webkit-transition:ease 0.4s;
+    transition:ease 0.4s;
+}
+.button:hover .line{
+	background:rgba(255,255,255,0.7);
+}
+.button .line-top{
+	width:2px;
+    height:1px;
+    margin-top:-1px;
+    margin-left: -200px; 
+}
+.button:hover .line-top{
+	width:201px;
+	height:1px;
+    margin-left:0px;
+}
+.button .line-right{
+	width:1px;
+    height:2px;
+    margin-left: -1px;
+    margin-top:110px;
+}
+.button:hover .line-right{
+    margin-top:0px;
+    height:56px;
+}
+.button .line-bottom{
+	width:2px;
+    height:1px;
+	margin-top:55px;
+	margin-left: 350px;
+}
+.button:hover .line-bottom{
+	width: 201px;
+    margin-left: 0px;
+}
+.button .line-left{
+	width:1px;
+    height:2px;
+    margin-left: 200px;
+    margin-top: -55px;
+}
+.button:hover .line-left{
+	height: 56px;
+    margin-top:0px;
+}
+.main{
+	width: 1180px;
+	height: 700px;
+	margin:0px auto;
+	margin-top: 40px;
+	/*border-bottom:1px solid black;*/
+}
+.left_nav{
+	width: 370px;
+	height: 700px;
+	float: left;
+
+}
+.left_nav .nav{
+	width: 350px;
+	height: 100px;
+	cursor: pointer;
+	float: left;
+	-moz-transition:ease 0.4s;
+    -o-transition:ease 0.4s;
+    -webkit-transition:ease 0.4s;
+    transition:ease 0.4s;
+}
+.left_nav h2{
+	margin-left: 90px;
+	margin-top: 10px;
+}
+.left_nav p{
+	margin-left: 90px;
+	margin-top: 10px;
+}
+.left_nav .nav:hover{
+	background: rgba(0,0,0,0.1);
+	border-radius: 8px;
+}
+.nav_img{
+	width: 90px;
+	height: 90px;
+	float: left;
+}
+.nav_img1{
+	background:url(../img/nav1.png) 0% 100%no-repeat;
+}
+.nav_img2{
+	background:url(../img/nav2.png) 0% 100%no-repeat;
+}
+.nav_img3{
+	background:url(../img/nav3.png) 0% 100%no-repeat;
+}
+.nav_img4{
+	background:url(../img/nav4.png) 0% 100%no-repeat;
+}
+.nav_img5{
+	background:url(../img/nav5.png) 0% 100%no-repeat;
+}
+.nav_img6{
+	background:url(../img/nav6.png) 0% 100%no-repeat;
+}
+.right_nav{
+	width: 808px;
+	height: 650px;
+	float: left;
+	/*border:1px solid #ccc;*/
+}
+.content{
+	width: 768px;
+	height: 590px;
+	margin :10px auto; 
+	/*border-top: 1px solid #ccc;*/
+}
+.content span a{
+	display: block;
+	float: left;
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 22px;
+	text-align: center;
+	border-radius: 5px;
+	width: 55px;
+	height: 22px;
+}
+.content span a:hover{
+	background: rgba(0,0,0,0.7);
+	color: #ccc;
+}
+.content_main{
+	width: 141px;
+	height: 70px;
+	float: left;
+	margin-top: 25px;
+	margin-left: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	/*box-shadow: 0px 0px 8px 0.5px #888888;*/
+	padding: 15px 15px 15px 15px;
+	background: rgba(0,0,0,0.05);
+	-moz-transition:ease 0.3s;
+    -o-transition:ease 0.3s;
+    -webkit-transition:ease 0.3s;
+    transition:ease 0.3s;
+}
+.content_main:hover{
+	box-shadow: 0px 0px 15px 3px #888888;
+	
+}
+.content_main .span2{
+	font-size: 20px;
+	line-height: 10px;
+}
+.content_main_data{
+	margin-top:10px;
+	font-size: 12px;
+	color: rgba(0,0,0,0.4);
+}
+.content_main .span3{
+	font-size: 10px;
+	vertical-align:7px; 
+}
+.content_main .span4{
+	font-size: 20px;
+	color: rgb(250,120,0);
+}
+.content_main .span5{
+	font-size: 13px;
+}
+.content_main .span6{
+	display: block;
+	float: right;
+	width: 45px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	color: white;
+	border-radius: 4px;
+	box-shadow: 0px 0px 8px 0.5px #888888;
+	background: rgb(250,170,0);
+}
+.content_main .span6:hover{
+	box-shadow: 0px 0px 8px 2px #888888;
+}
+.img_box{
+	width: 1200px;
+	height: 95px;
+	margin:100px auto;
+}
+.img1{
+	width: 580px;
+	height: 95px;
+	float: left;
+	padding-right: 20px;
+	background: url(../img/foot1.jpg)no-repeat;
+}
+.img2{
+	width: 580px;
+	height: 90px;
+	float: left;
+	padding-left: 20px;
+	background: url(../img/foot2.jpg)no-repeat;
+}
+
+
+
+.footer{
+	width: 1166px;
+	height:250px;
+	padding:40px 100px;
+	margin-top: 150px;
+	background: #333333; 
+}
+.end_box{
+	width: 1166px;
+	height: 140px;
+}
+.end{
+	width: 190px;
+	height: 130px;
+	padding: 5px 20px ;
+	float: left;
+	color: rgba(250,250,250,0.5);
+	border-right:1px solid rgba(250,250,250,0.15);
+}
+.end a{
+	display: block;
+	width: 95px;
+	float: left;
+	color: rgba(250,250,250,0.5);
+	margin-top: 6px;
+}
+.end a:hover{
+	color: rgb(250,120,0);
+}
+.footer p{
+	width: 1166px;
+	color: rgba(250,250,250,0.5);
+	text-align: center;
+	margin:8px auto;
+}
+.footer p a{
+	color: rgba(250,250,250,0.5);
+}
+.footer p a:hover{
+	color: rgb(250,120,0);
+}
+#btnLogin span{
+	width: 65px;
+	height: 65px;
+	display: block;
+	margin: auto;
+	border:2px solid rgba(250,250,250,0.7);
+	color: rgba(250,250,250,0.9);
+	border-radius: 65px;
+	font-size: 80px;
+	line-height: 50px;
+	text-align: center;
+	font-weight:bold;
+}
+/*弹出层*/
+
+/*遮罩层*/
+#mask{		
+	width: 100%;
+	height: 2190px;		
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index:2px;
+	display: none;
+
+	background: rgba(0,0,0,0.3);
+	-moz-transition:ease 0.1s;
+    -o-transition:ease 0.1s;
+    -webkit-transition:ease 0.1s;
+    transition:ease 0.1s;
+}
+/*弹出层*/
+#login{
+	width: 500px;
+	height: 450px;
+	position: fixed;
+	/*left: 403px;
+	top: 100px;*/
+	z-index:2px;
+	/*display: none;*/
+	/*margin-top: -500px;*/
+	-moz-transition:ease 0.5s;
+    -o-transition:ease 0.5s;
+    -webkit-transition:ease 0.5s;
+    transition:ease 0.5s;
+	padding: 20px;
+	border-radius: 5px;
+	background: rgba(0,0,0,0.85);
+}
+/*弹出层出现动画*/
+.loginCon{
+	transform:scale(0,0);
+}
+.loginChange{
+	transform:scale(1,1);
+}
+.loginChange2{
+	transform:scale(0,0);
+	/*transform:translate(0px,1200px);*/
+}
+/*返回按钮*/
+#close{
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+	font-weight: bold;
+	text-align:center;
+	line-height: 30px;
+	float: right;
+	background: rgba(0,0,0,0.7);
+	border-radius: 50px;
+	cursor: pointer;
+}
+#close2{
+	width: 20px;
+	height: 20px;
+	font-size: 17px;
+	font-weight: bold;
+	text-align:center;
+	line-height: 20px;
+	float: right;
+	background: rgba(0,0,0,0.7);
+	border-radius: 50px;
+	cursor: pointer;
+}
+#close3{
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+	font-weight: bold;
+	text-align:center;
+	line-height: 30px;
+	float: right;
+	margin-right:-30px;
+	margin-top: -20px; 
+	background: rgba(0,0,0,0.7);
+	border-radius: 50px;
+	cursor: pointer;
+}
+/*侧面登录*/
+.head{
+	width: 70px;
+	height: 70px;
+	border:1px solid #CCC;
+	border-radius: 300px;
+	/*background: #333333;*/
+	background: url(../img/xbj4.png);
+	color: rgba(255,255,255,0.7);
+	line-height: 70px;
+	text-align: center;
+	cursor: pointer;
+	position: fixed;
+	top: 40px;
+	right: -50px;
+	z-index: 2;
+	-moz-transition:ease 0.3s;
+    -o-transition:ease 0.3s;
+    -webkit-transition:ease 0.3s;
+    transition:ease 0.3s;
+}
+.head:hover{
+	right: 3px;
+}
+
+.head_text{
+	width: 110px;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	color: rgba(255,255,255,0.7);
+	border:1px solid #ccc;
+	border-right: none;
+	background: rgb(49,52,61);
+	border-top-left-radius:30px;
+	border-bottom-left-radius:30px;
+	position: fixed;
+	top: 50px;
+	right: -110px;
+	-moz-transition:ease 0.3s;
+    -o-transition:ease 0.3s;
+    -webkit-transition:ease 0.3s;
+    transition:ease 0.3s;
+}
+/*让他们鼠标放上去固定住*/
+.head_text:hover{
+	right: 64px;
+}
+.head_box:hover .head{
+	right: 3px;
+}
+.head_box:hover .head_text{
+	right: 64px;
+}
+
+.head_text a{
+	color: rgba(255,255,255,0.7);
+	font-size: 13px;
+	cursor: pointer;
+}
+.head_text a:hover{
+	color: rgb(250,120,0);
+}
+/*登录*/
+.login2{
+	/*transform: rotateY(-70deg);*/
+	margin-top: -550px;
+	margin-left: 900px;
+	transform:scale(1,1) rotate(360deg);
+}
+#login2{
+	width: 280px;
+	height: 300px;
+	position: fixed;
+	z-index: 2;
+	background: rgba(0,0,0,0.85);
+	border-radius: 10px;
+	padding: 20px;
+    transition: ease 0.7s;
+}
+.login2Change{
+
+}
+.login2Change2{
+	transform: translate(900px,-550px) rotate(360deg) scale(0,0);
+}
+.login_title{
+	width: 100%;
+	height: 40px;
+	margin-left:20px;
+	text-align: center;
+	line-height: 30px;
+	color: rgba(255,255,255,0.6);
+}
+.login_concent{
+	height: 290px;
+	color: rgba(255,255,255,0.9);
+	font-size: 16px;
+	border-top: 1px solid rgba(255,255,255,0.25);
+	padding: 10px;
+}
+#input1{
+	width: 160px;
+	height: 24px;
+	margin-top: 20px;
+	padding-left: 20px;
+	color:#ccc;
+	border:2px solid rgba(255,255,255,0.1);
+	border-radius: 3px;
+	
+	background-size: 16px 16px;
+}
+#input2{
+	width: 160px;
+	height: 24px;
+	margin-top: 20px;
+	padding-left: 20px;
+	color:#ccc;
+	border:1px solid rgba(255,255,255,0.1);
+	border-radius: 3px;
+	
+	background-size: 16px 16px;
+}
+.inputDl1{
+	background:rgba(255,255,255,0.6) url(../img/input1.png)no-repeat left;
+}
+.inputDl2{
+	background:rgba(255,255,255,0.6) url(../img/input3.png)no-repeat left;
+}
+.inputDlout1{
+	background:rgba(255,255,255,0.3) url(../img/input1.png)no-repeat left;
+}
+.inputDlout2{
+	background:rgba(255,255,255,0.3) url(../img/input3.png)no-repeat left;
+}
+.sumbit{
+	width: 230px;
+	height: 40px;
+	margin: 15px 0 0 15px;
+	border:1px solid #333333;
+	border-radius: 5px;
+	color: #ccc;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	background: rgb(72,183,6);
+}
+.checkbox{
+	width: 200px;
+	height: 18px;
+	margin:0 auto;
+	margin-top:30px;
+	font-size: 13px;
+	font-family: "微软雅黑";
+}
+.checkbox1{
+	margin-left: 7px;
+	background:rgba(255,255,255,0.3);
+}
+.checkbox2{
+	margin-left: 43px;
+	background:rgba(255,255,255,0.3);
+}
+/*注册页面*/
+.registered{
+	
+	
+}
+#registered{
+	width: 400px;
+	height: 490px;
+	position: fixed;
+	top: 50px;
+	left: 433px;
+	z-index: 2;
+	padding:40px 50px 20px 50px;
+	background: rgba(0,0,0,0.85);
+	border-radius: 10px;
+	-moz-transition:ease 0.6s;
+    -o-transition:ease 0.6s;
+    -webkit-transition:ease 0.6s;
+    transition:ease 0.6s;
+}
+
+.registered{
+	margin-left: -1000px;
+}
+.registeredChange2{
+	margin-left: -1000px;
+}
+
+.inputZc_box{
+	color: rgba(255,255,255,0.9);
+}
+.formZc{
+	width: 180px;
+	height: 24px;
+	margin-top: 20px;
+	color:#ccc;
+	font-family: "微软雅黑";
+	border:2px solid rgba(255,255,255,0.1);
+	border-radius: 3px;
+	background: rgba(255,255,255,0.3);
+	background-size: 16px 16px;
+}
+#selectZc{
+	text-align: center;
+}
+#submitZc{
+	width: 100px;
+	height: 30px;
+	float: right;
+	cursor: pointer;
+	margin-top: 50px;
+	color: white;
+	background: rgb(72,183,6);
+}
+.ZcSpan{
+	font-family: "微软雅黑";
+	font-size: 13px;
+}
+
+			
+
+
+
+
+
+
+
